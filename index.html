@@ -1,69 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Loja Tech - Eletrônicos</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
+
     <header>
+        <h1>Loja Tech</h1>
+    </header>
 
-<h1>Loja Tech</h1>
+    <main class="produtos">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400" alt="Smartphone">
+            <h2>Smartphone</h2>
+            <p>R$ 1.999,00</p>
+            <button onclick="comprar('Smartphone')">Comprar</button>
+        </div>
 
-</header>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=400" alt="Smartwatch">
+            <h2>Smartwatch</h2>
+            <p>R$ 599,00</p>
+            <button onclick="comprar('Smartwatch')">Comprar</button>
+        </div>
 
-<main class="produtos">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=400" alt="Fone Bluetooth">
+            <h2>Fone Bluetooth</h2>
+            <p>R$ 299,00</p>
+            <button onclick="comprar('Fone Bluetooth')">Comprar</button>
+        </div>
+    </main>
 
-<div class="card">
-
-<img src="" alt="Celular">
-
-<h2>Smartphone</h2>
-
-<p>R$ 1.999,00</p>
-
-<button onclick="comprar('Smartphone')">
-
-Comprar
-
-</button>
-
-</div>
-
-<div class="card">
-
-<img src="" alt="Relógio">
-
-<h2>Smartwatch</h2>
-
-<p>R$ 599,00</p>
-
-<button onclick="comprar('Smartwatch')">
-
-Comprar
-
-</button>
-
-</div>
-
-<div class="card">
-
-<img src="" alt="Fone">
-
-<h2>Fone Bluetooth</h2>
-
-<p>R$ 299,00</p>
-
-<button onclick="comprar('Fone Bluetooth')">
-
-Comprar
-
-</button>
-
-</div>
-
-</main>
 </body>
 </html>

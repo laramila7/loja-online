@@ -1,107 +1,88 @@
-body{
-
-margin: 0;
-
-font-family: Arial, Helvetica, sans-serif;
-
-background-color: #f2f2f2;
-
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* Roxo bem claro e acinzentado para o fundo do site */
+    background-color: #f4f0fa; 
 }
 
-header{
-
-background-color: #111;
-
-color: white;
-
-padding: 20px;
-
-text-align: center;
-
+header {
+    /* Roxo escuro e moderno (Deep Purple) */
+    background-color: #2c1a4d; 
+    color: white;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(44, 26, 77, 0.15);
 }
 
-.produtos{
-
-display: flex;
-
-justify-content: center;
-
-gap: 20px;
-
-flex-wrap: wrap;
-
-padding: 30px;
-
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 1px;
 }
 
-.card{
-
-background-color: white;
-
-width: 250px;
-
-border-radius: 10px;
-
-overflow: hidden;
-
-box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
-
-text-align: center;
-
-transition: 0.3s;
-
+.produtos {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 40px 20px;
 }
 
-.card:hover{
-
-transform: scale(1.05);
-
+.card {
+    background-color: white;
+    width: 250px;
+    border-radius: 12px;
+    overflow: hidden;
+    /* Sombra suave com toque de roxo */
+    box-shadow: 0px 8px 20px rgba(44, 26, 77, 0.08); 
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card img{
-
-width: 100%;
-
-height: 200px;
-
-object-fit: cover;
-
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 12px 25px rgba(106, 27, 154, 0.2);
 }
 
-.card h2{
-
-margin: 10px 0;
-
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background-color: #e8e0f5; /* Fundo padrão caso a imagem suma */
 }
 
-.card p{
-
-font-size: 20px;
-
-color: green;
-
+.card h2 {
+    margin: 15px 0 10px 0;
+    color: #2c1a4d;
+    font-size: 1.3rem;
 }
 
-button{
-
-background-color: #111;
-
-color: white;
-
-border: none;
-
-padding: 10px 20px;
-
-margin-bottom: 20px;
-
-border-radius: 5px;
-
-cursor: pointer;
-
+.card p {
+    font-size: 22px;
+    font-weight: bold;
+    /* Roxo vibrante para destacar o preço */
+    color: #6a1b9a; 
+    margin-bottom: 15px;
 }
 
-button:hover{
+button {
+    /* Roxo intermediário/chamativo para o botão */
+    background-color: #7b1fa2; 
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
 
-background-color: #444;
+button:hover {
+    /* Roxo mais escuro ao passar o mouse */
+    background-color: #4a148c; 
+}
 
+button:active {
+    transform: scale(0.98);
 }
